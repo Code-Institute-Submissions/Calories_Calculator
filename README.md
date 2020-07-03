@@ -1,39 +1,52 @@
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
+# TITLE
+    Members login page
 
-Welcome USER_NAME,
+## Project description
+    The benefit for the member of using this site is to keep track of body composition. 
+    It simplifies the search for workouts to do depending on the workouts purpose.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project.
+### User Stories
+    As a user I want to be able to calculate what workout to do depending on how many calories I want to burn and much time I want to spend doing it.
+    As a user I want to be able to find where I can do outdoor workouts depending on running or gym.
+    As a user I want to be able to fill in a form to contact the gym. 
 
-## Gitpod Reminders
+### Feature
+    <b>Header</b>
+    On the side, underneath picture and name of user, containing "Home", "Outdoor training" and "Calories calculator".
+    Home shows the users personal information like Weight, Height and BMR.
+    Outdoor training suggests places for running or outdoor gym training.
+    Calories calculator take the users personal information into account and merges it with calorie and duration target to give suggestion for workouts.
+    
+    <b>Footer</b>
+    Includes a form, prefilled with users name and email address, to contact the gym.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+    Google maps: Showing outdoor training places.
 
-`python3 -m http.server`
+    emailsjs: Is used for the form in the footer.
 
-A blue button should appear to click: *Make Public*,
+### Wireframes
 
-Another blue button should appear to click: *Open Browser*.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+### Technologies
 
-A blue button should appear to click: *Make Public*,
 
-Another blue button should appear to click: *Open Browser*.
+### Deployment Details
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the backend lessons.
 
-## Updates Since The Instructional Video
+### Credits
 
-We continually tweak and adjust this template to help give you the best experience. Here are the updates since the original video was made:
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+On the 3rd of July - what to deliver:
+    done The mobile and desktop Wireframes (balsamiq)
+    done    Add to Images folder (gitpod)
+    done    Fill in read.me
+            done What is the benefit for the memeber?
+                done Fill in the user stories (3)
+                done Fill in features 
+                    ex. header - clicking here 
+                        footer - 
+                        google maps - nearby exercise locations considering COVID19
+                        emailjs.com - 
+                        calculate/suggest workout
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
---------
-
-Happy coding!
+    done Email code institute about deadline for project
