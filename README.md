@@ -1,5 +1,5 @@
 # TITLE
-    Members login page
+    Calories calculator
 
 ## Project description
     The benefit for the member of using this site is to keep track of body composition. 
@@ -20,15 +20,16 @@
     <b>Footer</b>
     Includes a form, prefilled with users name and email address, to contact the gym.
 
-    Google maps: Showing outdoor training places.
+    Outdoor training: Showing outdoor training places.
 
-    emailsjs: Is used for the form in the footer.
+    Contact: Is used for the form in the footer.
 
 ### Wireframes
 
 
 ### Technologies
-
+    Google maps
+    emailjs
 
 ### Deployment Details
 
@@ -50,3 +51,44 @@ On the 3rd of July - what to deliver:
                         calculate/suggest workout
 
     done Email code institute about deadline for project
+
+
+   Until next meeting 10th of July:
+
+    A header with the options of Outdoor Training, Calories calculator (home), Contact
+    A footer with social links, opening times, email, phone number.
+
+    One javascript files with several funcitons.
+
+
+    One page with weight, height, bmr - button "okey"
+        Javascript code "display" when user clicks the button.
+        Trigger a method:
+        Flip display of calorie slider section
+        Variable saves information.
+        Calories next button.
+        Call method.
+        Display next method.
+        Variable saves information.
+        Last section has all relevant information.
+
+        Random formula (300/20=15)
+        ex. if value is <15 show these suggestions
+            if value is 15 - 30 show these suggestions
+
+        attribute name: data-suggestion-1, data-suggestion-2, data-suggestion-3,
+
+        "
+
+
+
+ 
+
+    Change the wireframes [desktop] & [mobile]
+
+        Upload wireframes
+        
+    Update read.me
+
+    Have the first page ready including Javascript
+        
