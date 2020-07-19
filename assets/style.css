@@ -4,7 +4,7 @@
 }
 
 .logo {
-    background: #525252;
+    background: url(../assets/images/logga.png);
 }
 
 .list-inline a {
@@ -43,6 +43,18 @@
     padding-top: 10px;
 }
 
+/*----------------------------- slider */
+.slider {
+  -webkit-appearance: none;
+  width: 25%;
+  height: 25px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
 /*------------------------------ body */
 
 .center {
@@ -73,6 +85,21 @@
     border: 2px;
     border-color: #525252;
     padding: 4px;
+}
+
+.one {
+    background: #fafafa;
+    display: none;
+}
+
+.two {
+    background: #ec7f22;
+    display: none;
+}
+
+.result {
+    font-size: 20px;
+    color: darkblue;
 }
 
 
@@ -113,3 +140,16 @@ footer {
     padding: 20px;
     margin-top: 10%;
 }
+
+.input {
+  display: block;
+  width: 200px;
+  margin: auto;
+}
+
+.output {
+  text-align: center;
+  display: block;
+  padding-top: 15px;
+}
+
