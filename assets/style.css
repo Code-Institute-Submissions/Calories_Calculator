@@ -4,7 +4,8 @@
 }
 
 .logo {
-    background: url(../assets/images/logga.png);
+    background: url(../assets/images/CA-logga.png);
+    background-repeat: no-repeat;
 }
 
 .list-inline a {
@@ -82,19 +83,36 @@
 }
 
 .workout {
-    border: 2px;
-    border-color: #525252;
-    padding: 4px;
+    border: 1px;
+    border-style: solid;
+    border-radius: 50px, 50px;
+    border-color: #525252; 
+}
+
+.no-suggestion {
+    display:none;
 }
 
 .one {
     background: #fafafa;
     display: none;
+    padding: 15px 20px 12px 22px;
+    -webkit-overflow-scrolling: touch;
+    max-width: 100%;
+    min-width: 100px;
+    font-size: 16px;
+    line-height: 1.75;
 }
 
 .two {
     background: #ec7f22;
     display: none;
+    padding: 15px 20px 12px 22px;
+    -webkit-overflow-scrolling: touch;
+    max-width: 100%;
+    min-width: 100px;
+    font-size: 16px;
+    line-height: 1.75;
 }
 
 .result {
@@ -109,6 +127,8 @@ footer {
     color: #fafafa;
     margin: 0;
     min-height: 120px;
+  height: 50px;
+  margin-top: -50px;
 }
 
 

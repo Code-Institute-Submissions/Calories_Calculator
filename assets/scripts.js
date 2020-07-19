@@ -39,7 +39,7 @@ slider1.oninput = function() {
 function showCalories() { 
         var calories = 
             document.getElementById("calories").value;
-        var showit = "To burn" + calories + "calories";
+        var showit = "Burning &nbsp;" + calories + "&nbsp; calories";
         document.getElementById('resultCalories').innerHTML = showit;
         }
 /*     --- resultTime --- */
@@ -47,7 +47,7 @@ function showCalories() {
 function showTime() { 
         var time = 
             document.getElementById("time").value; 
-        var showit = "during" + time + "minutes";
+        var showit = "during &nbsp;" + time + "&nbsp; minutes";
         document.getElementById('resultTime').innerHTML = showit;
         }
 
@@ -55,17 +55,20 @@ function showTime() {
 /*     --- suggestion --- */
 function suggestion() {
         let x = [];
-            if (parseInt(document.getElementById('calories').value) <= 400) {
+            if (parseInt(document.getElementById('time').value) < 25 && (parseInt(document.getElementById('calories').value) < 300))  {
                 x = document.getElementsByClassName('one');
                 console.log("ONE");
-            } else {
+            } else if (parseInt(document.getElementById('time').value) > 25 && (parseInt(document.getElementById('calories').value) > 300)) {
                 x = document.getElementsByClassName('two');
-                console.log("TWO");
-            }
+                console.log("TWO"); 
+            } else { 
+                x = document.getElementsByClassName('no-suggestion');
+                console.log("NO-SUGGESTION");}
+            
             for (i = 0; i < x.length; i++) {
                 x[i].style.display = 'block';}
             }
-
+            
             
             
         
