@@ -24,13 +24,10 @@
                     <div class="col">
                         <ul id="nav" class="list-inline menucontainer">
                             <li class="col-6 col-sm-3 ui-menu-color-home list-inline-item menuitem">
-                            <a href="#"><span>Calories Calculator</span></a>
+                            <a href="index.html"><span>Calories Calculator</span></a>
                             </li>
                             <li class="col-6 col-sm-3 ui-menu-color-resume list-inline-item menuitem">
-                            <a href="#"><span>Outdoor Training</span></a>
-                            </li>
-                            <li class="col-6 col-sm-3 ui-menu-color-contact list-inline-item menuitem">
-                            <a href="#"><span>Contact</span></a>
+                            <a href="outdoor-training.html"><span>Outdoor Training</span></a>
                             </li>
                         </ul>
                     </div>
@@ -39,19 +36,20 @@
         </div>
     </header>
 <!-- section 0 -->
-    <section class="container center" style="padding-top: 10%">
+    <section id="section0" class="container center">
         <div>
             <h1>Fill in your personal details</h1>
-                <label for="InputWeight">Weight</label>
-                <input type="number" class="form-control" id="inputWeight">
+                <label for="InputWeight">Weight | 40 - 150</label>
+                <input type="number" class="form-control" value="40" min="40" max="150" id="inputWeight">
 
-                <label for="InputHeight">Height</label>
-                <input type="number" class="form-control" id="InputHeight">
+                <label for="InputHeight">Height | 150 - 210</label>
+                <input type="number" class="form-control" value="150" min="150" max="210" id="inputHeight">
 
-                <label for="InputBMR">Age</label>
-                <input type="number" class="form-control" id="inputBMR">
-
+                <label for="InputBMR">BMR | 1000 - 4000</label>
+                <input type="number" class="form-control" value="1000" min="1000" max="4000"  id="inputBMR">
+            <div id="btn1">
                 <button onclick="show1();">Next step</button>
+            </div>
         </div>
     </section>
 
@@ -83,7 +81,7 @@
 
 <!-- section 3  -->
 
-    <section id="section3" class="container-fluid center" style="margin-top: 10%;">
+    <section id="section3" class="container center">
             <span><h3>Suggestions for...</h3></span>
                 <div id="resultCalories" class="result"></div>
                 <div id="resultTime" class="result"></div>
@@ -92,13 +90,13 @@
 
 <!-- section 4  -->
 
-    <section id="section4" class="container">
+    <section id="section4" class="container center">
         <div class="container">
             <div class="row">
                 <div class="col">
                     <h3> On Club Active </h3>
                         <div class="no-suggestion">
-                        <h3>We have no suggestion for that</h3>
+                        <h3>Sorry, We have no suggestion for that</h3>
                         </div>
                         <div class="row row-cols-2">
                             <div class="col workout one">
@@ -128,6 +126,7 @@
                             <div class="col workout one">
                                     <h3>Functional Training</h3>
                                     <p>We suggest you do 10 push ups, 15 situps, 10 burpees, 20 triceps-dips</p>
+                            </div>
                             <div class="col workout two">
                                     <h3>Functional Training</h3>
                                     <p>We suggest you do 10 push ups, 15 situps, 10 burpees, 20 triceps-dips x2</p>
@@ -136,15 +135,14 @@
                     </div>
                 </div>
             </div>
-        </div>
     </section>
-    <section id="section5" class="container">
+    <section id="section5" class="container center">
         <div class="container">
             <div class="row">
                 <div class="col">
                     <h3> Outdoors </h3>
                         <div class="no-suggestion">
-                            <h3>We have no suggestion for that</h3>
+                            <h3>Sorry, we have no suggestion for that</h3>
                         </div>
                         <div class="row row-cols-2">
                             <div class="col workout one"> 

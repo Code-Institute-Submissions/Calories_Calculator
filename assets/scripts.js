@@ -1,3 +1,5 @@
+
+
 function show1() {
     document.getElementById('section1').style.display = "block";
 }
@@ -55,10 +57,10 @@ function showTime() {
 /*     --- suggestion --- */
 function suggestion() {
         let x = [];
-            if (parseInt(document.getElementById('time').value) < 25 && (parseInt(document.getElementById('calories').value) < 300))  {
+            if (parseInt(document.getElementById('time').value) < 20 && (parseInt(document.getElementById('calories').value) < 200))  {
                 x = document.getElementsByClassName('one');
                 console.log("ONE");
-            } else if (parseInt(document.getElementById('time').value) > 25 && (parseInt(document.getElementById('calories').value) > 300)) {
+            } else if (parseInt(document.getElementById('time').value) >= 25 && (parseInt(document.getElementById('calories').value) > 200)) {
                 x = document.getElementsByClassName('two');
                 console.log("TWO"); 
             } else { 
@@ -67,8 +69,14 @@ function suggestion() {
             
             for (i = 0; i < x.length; i++) {
                 x[i].style.display = 'block';}
-            }
+            };
+
+function suggestion() {
+        let x = [];
+            if (parseInt(document.getElementByClassName('one').style.display = "block" || (parseInt(document.getElementsByClassName('two').style.display = "block"))))  {
+                x = document.getElementsByClassName('no-suggestion');
+                console.log("NO-SUGGESTION");}
             
-            
-            
-        
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = 'block';}
+            };
