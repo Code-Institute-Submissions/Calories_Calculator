@@ -38,14 +38,15 @@
 <!-- section 0 -->
     <section id="section0" class="container center">
         <div>
-            <h1>Fill in your personal details</h1>
-                <label for="InputWeight">Weight | 40 - 150</label>
+            <h1>Hi! Welcome to Calories Calculator</h1>
+            <h3>To start, please fill in your personal details</h3>
+                <label style="margin-top:10px" for="InputWeight">Weight | kg | 40 - 150</label>
                 <input type="number" class="form-control" value="40" min="40" max="150" id="inputWeight">
 
-                <label for="InputHeight">Height | 150 - 210</label>
+                <label style="margin-top:10px" for="InputHeight">Height | cm | 150 - 210</label>
                 <input type="number" class="form-control" value="150" min="150" max="210" id="inputHeight">
 
-                <label for="InputBMR">BMR | 1000 - 4000</label>
+                <label style="margin-top:10px" for="InputBMR">BMR | calories | 1000 - 4000</label>
                 <input type="number" class="form-control" value="1000" min="1000" max="4000"  id="inputBMR">
             <div id="btn1">
                 <button onclick="show1();">Next step</button>
@@ -56,36 +57,34 @@
 <!-- section 1  -->
 
     <section id="section1" class="container center">
-
-        <p>Calories <span id="caloriesAmount"></span></p>
-        <input type="range" min="50" max="800" step ="10" value="300" class="slider" id="calories">
-        
+    <div>
+        <h5>Approx amount of calories desired to burn</h5>
+    </div>
+        <p style="font-size: 20px"><span id="caloriesAmount" style="font-size: 20px"></span> calories</p>
+        <input type="range" min="50" max="800" step ="10" value="300" class="slider" id="calories" style="font-size: 20px">
         <div>
-                <p style="padding-bottom: 10px;">Approx amount of calories desired to burn</p>
-        </div>
             <button onclick="show2();showCalories();">Next step</button>
+        </div>
     </section>
 
 <!-- section 2  -->
 
     <section id="section2" class="container center">
-
-            <p>Time <span id="timeAmount"></span> min</p>
-            <input type="range" min="5" max="60" step ="5" value="20" class="slider" id="time">
-
             <div>
-                <p style="padding-bottom: 10px;">Approx amount of time desired to spend</p>
+                <h5 style="padding-bottom: 10px;">Approx amount of time desired to spend</h5>
             </div>
-                <button onclick="show3();showTime();suggestion();">Calculate</button>            
+            <p style="font-size: 20px"><span id="timeAmount" style="font-size: 20px"></span> min</p>
+            <input type="range" min="5" max="60" step ="5" value="20" class="slider" id="time" style="font-size: 20px">
+            <div>
+                <button onclick="show3();showTime();suggestion();">Calculate</button>
+            </div>         
     </section>
 
 <!-- section 3  -->
 
     <section id="section3" class="container center">
             <span><h3>Suggestions for...</h3></span>
-                <div id="resultCalories" class="result"></div>
-                <div id="resultTime" class="result"></div>
-
+                <div><span id="resultCalories" class="result"></span><span id="resultTime" class="result"></span></div>
     </section>
 
 <!-- section 4  -->
@@ -98,14 +97,14 @@
                         <div class="no-suggestion">
                         <h3>Sorry, We have no suggestion for that</h3>
                         </div>
-                        <div class="row row-cols-2">
+                        <div class="row row-cols-4">
                             <div class="col workout one">
                                     <h3>Milon</h3>
                                     <p>We suggest you do 1 lap in Milon</p>
                             </div>
                             <div class="col workout two">
                                     <h3>Milon</h3>
-                                    <p>We the suggest you do 2 laps in Milon</p>
+                                    <p>We suggest you do 2 laps in Milon</p>
                             </div>
                             <div class="col workout one">
                                     <h3>Power Plate</h3>
@@ -144,7 +143,7 @@
                         <div class="no-suggestion">
                             <h3>Sorry, we have no suggestion for that</h3>
                         </div>
-                        <div class="row row-cols-2">
+                        <div class="row row-cols-4">
                             <div class="col workout one"> 
                                     <h3>Running</h3>
                                     <p>We suggest you do 15-25 min at 70% of maxpulse</p>

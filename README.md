@@ -21,6 +21,7 @@
     <b>Footer</b>
         Contact details, social icons and opening times.
 ### Wireframes
+    [update wireframes]
     [upload wireframes]
 
 ### Technologies
@@ -31,10 +32,14 @@
 
 ### Testing
 
-        Known issues: The "time" is not showing instantly 
+        Known issues: 
+        The "time" is not showing instantly
+        Suggestions doesn't replace eachother but stays on screen when you alter value for inputs of time and calories.
+
 
 ### Pending features
  [more accurate Calculator]
+ [use personal information ]
 
 
 ### Credits

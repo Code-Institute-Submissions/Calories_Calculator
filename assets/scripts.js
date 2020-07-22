@@ -49,7 +49,7 @@ function showCalories() {
 function showTime() { 
         var time = 
             document.getElementById("time").value; 
-        var showit = "during &nbsp;" + time + "&nbsp; minutes";
+        var showit = "&nbsp; during &nbsp;" + time + "&nbsp; minutes";
         document.getElementById('resultTime').innerHTML = showit;
         }
 
@@ -69,14 +69,14 @@ function suggestion() {
             
             for (i = 0; i < x.length; i++) {
                 x[i].style.display = 'block';}
-            };
+            }
 
-function suggestion() {
+function noSuggestion() {
         let x = [];
             if (parseInt(document.getElementByClassName('one').style.display = "block" || (parseInt(document.getElementsByClassName('two').style.display = "block"))))  {
                 x = document.getElementsByClassName('no-suggestion');
                 console.log("NO-SUGGESTION");}
             
             for (i = 0; i < x.length; i++) {
-                x[i].style.display = 'block';}
-            };
+                x[i].style.display = 'none';}
+            }
