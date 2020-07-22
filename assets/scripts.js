@@ -71,12 +71,25 @@ function suggestion() {
                 x[i].style.display = 'block';}
             }
 
-function noSuggestion() {
-        let x = [];
-            if (parseInt(document.getElementByClassName('one').style.display = "block" || (parseInt(document.getElementsByClassName('two').style.display = "block"))))  {
-                x = document.getElementsByClassName('no-suggestion');
-                console.log("NO-SUGGESTION");}
-            
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = 'none';}
-            }
+
+/* -- validation -- */
+    $(document).ready(function() {
+        $('#inputWeight').change(function(val) {
+    if (val < 40)
+            $('#inputWeight').val(40);
+            console.log('inputWeight')
+  })
+})
+    $(document).ready(function() {
+        $('#inputHeight').change(function(val) {
+    if (val < 150)
+		    $('#inputWeight').val(150);
+  })
+})
+
+    $(document).ready(function() {
+        $('#inputBMR').change(function(val) {
+    if (val < 1000)
+		    $('#inputWeight').val(1000);
+  })
+})
