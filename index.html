@@ -1,225 +1,323 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calories Calculator</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css"
+      type="text/css"
+    />
 
-    <link rel="stylesheet" href="assets/style.css" type="text/css">
+    <link rel="stylesheet" href="assets/style.css" type="text/css" />
+  </head>
 
-    
-    
-</head>
-
-<body>
-<!-- header -->
+  <body>
+    <!-- header -->
     <header class="header">
-        <div class="row no-gutters">
-            <a class="col-md-4 logo" href="index.html"></a>
-            <div class="col-md-8">
-                <div class="row">
-                    <div class="col">
-                        <ul id="nav" class="list-inline menucontainer">
-                            <li class="col-6 col-sm-3 ui-menu-color-home list-inline-item menuitem">
-                            <a href="index.html"><span>Calories Calculator</span></a>
-                            </li>
-                            <li class="col-6 col-sm-3 ui-menu-color-resume list-inline-item menuitem">
-                            <a href="outdoor-training.html"><span>Outdoor Training</span></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+      <div class="row no-gutters">
+        <a class="col-sm logo" href="index.html"></a>
+        <div class="col-md-8">
+          <div class="row">
+            <div class="col">
+              <ul id="nav" class="list-inline menucontainer">
+                <li
+                  class="col-6 col-sm-3 ui-menu-color-home list-inline-item menuitem"
+                >
+                  <a href="index.html"><span>Calories Calculator</span></a>
+                </li>
+                <li
+                  class="col-6 col-sm-3 ui-menu-color-resume list-inline-item menuitem"
+                >
+                  <a href="outdoor-training.html"
+                    ><span>Outdoor Training</span></a
+                  >
+                </li>
+              </ul>
             </div>
+          </div>
         </div>
+      </div>
     </header>
-<!-- section 0 -->
+    <!-- section 0 -->
     <section id="section0" class="container center">
-        <div>
-            <h1>Hi! Welcome to Calories Calculator</h1>
-            <h3>To start, please fill in your personal details</h3>
-                <label style="margin-top:10px" for="InputWeight">Weight | kg | 40 - 150</label>
-                <input type="number" class="form-control" value="40" min="40" max="150" id="inputWeight">
+      <div>
+        <h1>Hi! Welcome to Calories Calculator</h1>
+        <h3>To start, please fill in your personal details</h3>
+        <label style="margin-top: 10px;" for="InputWeight"
+          >Weight | kg | 40 - 150</label
+        >
+        <input
+          type="number"
+          class="form-control"
+          value="40"
+          min="40"
+          max="150"
+          id="inputWeight"
+        />
 
-                <label style="margin-top:10px" for="InputHeight">Height | cm | 150 - 210</label>
-                <input type="number" class="form-control" value="150" min="150" max="210" id="inputHeight">
+        <label style="margin-top: 10px;" for="InputHeight"
+          >Height | cm | 150 - 210</label
+        >
+        <input
+          type="number"
+          class="form-control"
+          value="150"
+          min="150"
+          max="210"
+          id="inputHeight"
+        />
 
-                <label style="margin-top:10px" for="InputBMR">BMR | calories | 1000 - 4000</label>
-                <input type="number" class="form-control" value="1000" min="1000" max="4000"  id="inputBMR">
-            <div id="btn1">
-                <button onclick="show1();">Next step</button>
-            </div>
+        <label style="margin-top: 10px;" for="InputBMR"
+          >BMR | calories | 1000 - 4000</label
+        >
+        <input
+          type="number"
+          class="form-control"
+          value="1000"
+          min="1000"
+          max="4000"
+          id="inputBMR"
+        />
+        <div id="btn1">
+          <button onclick="show1();">Next step</button>
         </div>
+      </div>
     </section>
 
-<!-- section 1  -->
+    <!-- section 1 / This is... -->
 
     <section id="section1" class="container center">
-    <div>
+      <div>
         <h5>Approx amount of calories desired to burn</h5>
-    </div>
-        <p style="font-size: 20px"><span id="caloriesAmount" style="font-size: 20px"></span> calories</p>
-        <input type="range" min="50" max="800" step ="10" value="300" class="slider" id="calories" style="font-size: 20px">
-        <div>
-            <button onclick="show2();showCalories();">Next step</button>
-        </div>
+      </div>
+      <p style="font-size: 20px;">
+        <span id="caloriesAmount" style="font-size: 20px;"></span> calories
+      </p>
+      <input
+        type="range"
+        min="50"
+        max="800"
+        step="10"
+        value="300"
+        class="slider"
+        id="calories"
+        style="font-size: 20px;"
+      />
+      <div>
+        <button onclick="show2();showCalories();">Next step</button>
+      </div>
     </section>
 
-<!-- section 2  -->
+    <!-- section 2 / This is ....  -->
 
     <section id="section2" class="container center">
-            <div>
-                <h5 style="padding-bottom: 10px;">Approx amount of time desired to spend</h5>
-            </div>
-            <p style="font-size: 20px"><span id="timeAmount" style="font-size: 20px"></span> min</p>
-            <input type="range" min="5" max="60" step ="5" value="20" class="slider" id="time" style="font-size: 20px">
-            <div>
-                <button onclick="show3();showTime();suggestion();">Calculate</button>
-            </div>         
+      <div>
+        <h5 style="padding-bottom: 10px;">
+          Approx amount of time desired to spend
+        </h5>
+      </div>
+      <p style="font-size: 20px;">
+        <span id="timeAmount" style="font-size: 20px;"></span> min
+      </p>
+      <input
+        type="range"
+        min="5"
+        max="60"
+        step="5"
+        value="20"
+        class="slider"
+        id="time"
+        onchange="enable();"
+      />
+      <div>
+        <button
+          type="button"
+          id="cBtn"
+          disabled
+          onclick="show3();showTime();suggestion();"
+        >
+          Calculate
+        </button>
+      </div>
     </section>
 
-<!-- section 3  -->
+    <!-- section 3  -->
 
     <section id="section3" class="container center">
-            <span><h3>Suggestions for...</h3></span>
-                <div><span id="resultCalories" class="result"></span><span id="resultTime" class="result"></span></div>
+      <span><h3>Suggestions for...</h3></span>
+      <div>
+        <span id="resultCalories" class="result"></span
+        ><span id="resultTime" class="result"></span>
+      </div>
     </section>
 
-<!-- section 4  -->
+    <!-- section 4  -->
 
     <section id="section4" class="container center">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h3> On Club Active </h3>
-                        <div class="no-suggestion">
-                        <h3>Sorry, We have no suggestion for that</h3>
-                        </div>
-                        <div class="row row-cols-4">
-                            <div class="col workout one">
-                                    <h3>Milon</h3>
-                                    <p>We suggest you do 1 lap in Milon</p>
-                            </div>
-                            <div class="col workout two">
-                                    <h3>Milon</h3>
-                                    <p>We suggest you do 2 laps in Milon</p>
-                            </div>
-                            <div class="col workout one">
-                                    <h3>Power Plate</h3>
-                                    <p>We suggest you do the "Whole program 15min"</p>
-                            </div>
-                            <div class="col workout two">
-                                    <h3>Power Plate</h3>
-                                    <p>We suggest you do the "Whole program 30min"</p>
-                            </div>
-                            <div class="col workout one">
-                                    <h3>EAHT</h3>
-                                    <p>We suggest you do 6 intervalls á 30sec</p>
-                            </div>
-                            <div class="col workout two">
-                                    <h3>EAHT</h3>
-                                    <p>We suggest you do 10 intervalls á 30sec</p>
-                            </div>
-                            <div class="col workout one">
-                                    <h3>Functional Training</h3>
-                                    <p>We suggest you do 10 push ups, 15 situps, 10 burpees, 20 triceps-dips</p>
-                            </div>
-                            <div class="col workout two">
-                                    <h3>Functional Training</h3>
-                                    <p>We suggest you do 10 push ups, 15 situps, 10 burpees, 20 triceps-dips x2</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h3>On Club Active</h3>
+            <div class="col-sm workout one">
+              <h3>Milon</h3>
+              <p>We suggest you do 1 lap in Milon</p>
             </div>
+            <div class="col-sm workout two">
+              <h3>Milon</h3>
+              <p>We suggest you do 2 laps in Milon</p>
+            </div>
+            <div class="col-sm workout one">
+              <h3>Power Plate</h3>
+              <p>We suggest you do the "Whole program 15min"</p>
+            </div>
+            <div class="col-sm workout two">
+              <h3>Power Plate</h3>
+              <p>We suggest you do the "Whole program 30min"</p>
+            </div>
+            <div class="col-sm workout one">
+              <h3>EAHT</h3>
+              <p>We suggest you do 6 intervalls á 30sec</p>
+            </div>
+            <div class="col-sm workout two">
+              <h3>EAHT</h3>
+              <p>We suggest you do 10 intervalls á 30sec</p>
+            </div>
+            <div class="col-sm workout one">
+              <h3>Functional Training</h3>
+              <p>
+                We suggest you do 10 push ups, 15 situps, 10 burpees, 20
+                triceps-dips
+              </p>
+            </div>
+            <div class="col-sm workout two">
+              <h3>Functional Training</h3>
+              <p>
+                We suggest you do 10 push ups, 15 situps, 10 burpees, 20
+                triceps-dips x2
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <section id="section5" class="container center">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h3> Outdoors </h3>
-                        <div class="no-suggestion">
-                            <h3>Sorry, we have no suggestion for that</h3>
-                        </div>
-                        <div class="row row-cols-4">
-                            <div class="col workout one"> 
-                                    <h3>Running</h3>
-                                    <p>We suggest you do 15-25 min at 70% of maxpulse</p>
-                            </div>
-                            <div class="col workout one">
-                                    <h3>Swimming</h3>
-                                    <p></p>
-                            </div>
-                            <div class="col workout one">
-                                    <h3>Walking</h3>
-                                    <p>We suggest you go for a 10-25min walk at a speed that gets your heart pumping</p>
-                            </div>
-                            <div class="col workout one">
-                                    <h3>Functional Training</h3>
-                                    <p>We suggest you do 10 push ups, 15 situps, 10 burpees, 20 triceps-dips</p>
-                            </div>
-                            <div class="col workout two">
-                                    <h3>Functional Training</h3>
-                                    <p>We suggest you do 10 push ups, 15 situps, 10 burpees, 20 triceps-dips x2</p>
-                            </div>
-                        </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h3>Outdoors</h3>
+            <div class="col-sm workout one">
+              <h3>Running</h3>
+              <p>We suggest you do 15-25 min at 70% of maxpulse</p>
             </div>
-        </div>         
+            <div class="col-sm workout one">
+              <h3>Swimming</h3>
+              <p>We suggest you do 15 laps in a regular size pool</p>
+            </div>
+            <div class="col-sm workout one">
+              <h3>Walking</h3>
+              <p>
+                We suggest you go for a 10-25min walk at a speed that gets your
+                heart pumping
+              </p>
+            </div>
+            <div class="col-sm workout one">
+              <h3>Functional Training</h3>
+              <p>
+                We suggest you do 10 push ups, 15 situps, 10 burpees, 20
+                triceps-dips
+              </p>
+            </div>
+            <div class="col-sm workout two">
+              <h3>Functional Training</h3>
+              <p>
+                We suggest you do 10 push ups, 15 situps, 10 burpees, 20
+                triceps-dips x2
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-<!-- footer -->
+    <!-- footer -->
 
     <footer class="container-fluid">
-        <div id="footer-details" class="row">
-            <div class="col-sm-4">
-                <h5 class="uppercase general-sub">Opening times</h5>
-                <p class="inline-block">
-               Mon - Thur: 09.00 - 19.00
-               Fri:        09.00 - 17.00
-                </p>
-            </div>
-            <div class="col-sm-4">
-                <h5 class="uppercase general-sub">Contact details</h5>
-                <p class="inline-block">
-                    info@clubactive.se
-                    08 540 883 30
-                </p>
-            </div>
-            <div class="col-sm-4">
-                <h5 class="uppercase general-sub">Social</h5>
-                <ul class="list-inline social-links">
-                    <li class="list-inline-item">
-                        <a target="_blank" href="https://www.facebook.com/clubactive.akersberga">
-                            <i class="fa fa-facebook" aria-hidden="true"></i>
-                            <span class="sr-only">Facebook</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a target="_blank" href="https://www.instagram.com/club.active">
-                            <i class="fa fa-instagram" aria-hidden="true"></i>
-                            <span class="sr-only">Instagram</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a target="_blank" href="https://www.youtube.com/channel/UCrOGZvrue6suzX04Dd9TGWw?view_as=subscriber">
-                            <i class="fa fa-youtube" aria-hidden="true"></i>
-                            <span class="sr-only">YouTube</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+      <div id="footer-details" class="row">
+        <div class="col-sm-4">
+          <h5 class="uppercase general-sub">Opening times</h5>
+          <p class="inline-block">
+            Mon - Thur: 09.00 - 19.00 Fri: 09.00 - 17.00
+          </p>
         </div>
+        <div class="col-sm-4">
+          <h5 class="uppercase general-sub">Contact details</h5>
+          <p class="inline-block">
+            info@clubactive.se 08 540 883 30
+          </p>
+        </div>
+        <div class="col-sm-4">
+          <h5 class="uppercase general-sub">Social</h5>
+          <ul class="list-inline social-links">
+            <li class="list-inline-item">
+              <a
+                target="_blank"
+                href="https://www.facebook.com/clubactive.akersberga"
+              >
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+                <span class="sr-only">Facebook</span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a target="_blank" href="https://www.instagram.com/club.active">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+                <span class="sr-only">Instagram</span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a
+                target="_blank"
+                href="https://www.youtube.com/channel/UCrOGZvrue6suzX04Dd9TGWw?view_as=subscriber"
+              >
+                <i class="fa fa-youtube" aria-hidden="true"></i>
+                <span class="sr-only">YouTube</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </footer>
 
-<!-- scripts -->
+    <!-- scripts -->
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    <script src="assets/scripts.js"></script>
-</body>
-
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/app.js"></script>
+  </body>
 </html>
