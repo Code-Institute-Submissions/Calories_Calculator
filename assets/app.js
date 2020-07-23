@@ -1,28 +1,36 @@
-/* With this we let the first section containing the amount of calories to be displayed when function show1 is called.
-  It is called when user presses the first button available on the page – the "next"-button underneath the personal-details inputs */
+/* With this we let the first section containing the amount 
+of calories to be displayed when function show1 is called.
+It is called when user presses the first button available 
+on the page – the "next"-button underneath the personal-details inputs */
 function show1() {
   document.getElementById("section1").style.display = "block";
 }
 
-/* With this we let the second section containing the amount of time to be displayed when function show2 is called.
-  It is called when user presses the "next"-button underneath the calories-slider */
+/* With this we let the second section containing the amount of 
+time to be displayed when function show2 is called.
+It is called when user presses the "next"-button 
+underneath the calories-slider */
 function show2() {
   document.getElementById("section2").style.display = "block";
 }
 
-/* Here we simply let the last sections be displayed when the function show3 is called.
-It is called when user presses the "calculate"-button after deciding how much time desired to spend */
+/* Here we simply let the last sections be displayed 
+when the function show3 is called.
+It is called when user presses the "calculate"-button 
+after deciding how much time desired to spend */
+
 function show3() {
   document.getElementById("section3").style.display = "block";
   document.getElementById("section4").style.display = "block";
   document.getElementById("section5").style.display = "block";
 }
 
-/* This function sends then value from the slider of calories to be live updated above the slider when the slider is changed */
+/* This function sends then value from the slider of calories 
+to be live updated above the slider when the slider is changed */
 $(document).ready(function () {
   var slider = document.getElementById("calories");
   var output = document.getElementById("caloriesAmount");
-  if (output == null) {
+  if (output === null) {
     return;
   }
   output.innerHTML = slider.value;
@@ -31,7 +39,8 @@ $(document).ready(function () {
     output.innerHTML = this.value;
   };
 
-  /* This function sends then value from the slider of time to be live updated above the slider when the slider is changed */
+  /* This function sends then value from the slider of time 
+  to be live updated above the slider when the slider is changed */
   var slider1 = document.getElementById("time");
   var output1 = document.getElementById("timeAmount");
   output.innerHTML = slider.value;
@@ -43,7 +52,9 @@ $(document).ready(function () {
 
 /* With this funcition we send the value from input of calories to be displayed when called.
 It is being displayed at section 3 under "Suggestions for...".
-It is being called when user have decided amount calories are desired to burn */
+It is being called when user have decided amount calories are desired to burn 
+*/
+
 function showCalories() {
   var calories = document.getElementById("calories").value;
   var showit = "Burning &nbsp;" + calories + "&nbsp; calories";
@@ -53,22 +64,26 @@ function showCalories() {
 /* This funcition is displayed next to the previous one (showCalories()) at section 3.
 The function sends the value from input of time to be displayed when called.
 */
+
 function showTime() {
   var time = document.getElementById("time").value;
   var showit = "&nbsp; during &nbsp;" + time + "&nbsp; minutes";
   document.getElementById("resultTime").innerHTML = showit;
 }
 
-
 /*  
-With this function user is given suggestions on workouts based on the values from input of amount
-of time and calories.
-The suggestions are meant to be more accurate and also include the personal-details but for now it is working just to show the idea.
+With this function user is given suggestions on workouts based 
+on the values from input of amountof time and calories.
+The suggestions are meant to be more accurate and also include 
+the personal-details but for now it is working just to show the idea.
+
 The suggestions are categorised in classes of "one" and "two". 
-Dpending on the values from time and calories the classes change from not being displayed to being displayed */
+Dpending on the values from time and calories the classes change 
+from not being displayed to being displayed 
+*/
 
 function suggestion() {
-  let x = [];
+  var x = [];
   if (
     parseInt(document.getElementById("time").value) <= 30 &&
     parseInt(document.getElementById("calories").value) <= 400

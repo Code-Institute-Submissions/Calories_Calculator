@@ -52,14 +52,15 @@
         </div>
       </div>
     </header>
-    <!-- section 0 -->
+
+    <!-- This section can be called "the home page" as it is
+    the first thing that user sees.
+    It contains the personal details inputs and a "next"-button -->
     <section id="section0" class="container center">
       <div>
         <h1>Hi! Welcome to Calories Calculator</h1>
         <h3>To start, please fill in your personal details</h3>
-        <label style="margin-top: 10px;" for="InputWeight"
-          >Weight | kg | 40 - 150</label
-        >
+        <label for="InputWeight">Weight | kg | 40 - 150</label>
         <input
           type="number"
           class="form-control"
@@ -69,9 +70,7 @@
           id="inputWeight"
         />
 
-        <label style="margin-top: 10px;" for="InputHeight"
-          >Height | cm | 150 - 210</label
-        >
+        <label for="InputHeight">Height | cm | 150 - 210</label>
         <input
           type="number"
           class="form-control"
@@ -81,9 +80,7 @@
           id="inputHeight"
         />
 
-        <label style="margin-top: 10px;" for="InputBMR"
-          >BMR | calories | 1000 - 4000</label
-        >
+        <label for="InputBMR">BMR | calories | 1000 - 4000</label>
         <input
           type="number"
           class="form-control"
@@ -98,7 +95,8 @@
       </div>
     </section>
 
-    <!-- section 1 / This is... -->
+    <!-- This next section lets user set amount of calories to burn.
+    It contains a slider for input of calories value and a "next"-button -->
 
     <section id="section1" class="container center">
       <div>
@@ -122,8 +120,8 @@
       </div>
     </section>
 
-    <!-- section 2 / This is ....  -->
-
+    <!-- This next section lets user set amount of time to spend.
+    It contains a slider for input of time value and a "calculate"-button -->
     <section id="section2" class="container center">
       <div>
         <h5 style="padding-bottom: 10px;">
@@ -155,17 +153,24 @@
       </div>
     </section>
 
-    <!-- section 3  -->
+    <!-- Here the user is given the values that were put in
+        from time and calories sliders.
 
+    It contains a function to display those values. -->
     <section id="section3" class="container center">
-      <span><h3>Suggestions for...</h3></span>
+      <h3>Suggestions for...</h3>
       <div>
         <span id="resultCalories" class="result"></span
         ><span id="resultTime" class="result"></span>
       </div>
     </section>
 
-    <!-- section 4  -->
+    <!-- We have now arrived at the suggestions part.
+    Here user is given suggestions of workouts based on 
+    the values user provided in previous steps.
+
+    It contains a function that toggles classes that
+    suggestions are categorised by. -->
 
     <section id="section4" class="container center">
       <div class="container">

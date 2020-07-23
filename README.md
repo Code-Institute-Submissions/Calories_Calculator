@@ -20,7 +20,7 @@ The calories calculator simplifies the search for workouts depending on the leve
 
 <p>
 1. As a user I want to be able to get suggestions on workouts that take amount of calories to burn and time to spend into consideration.<br>
-2. As a user I want to be able to find where I can do outdoor workouts depending on running or outdoor-gym.
+2. As a user I want to be able to see in the local area good areas for running and outdoor training.
 </p>
 <br><br>
 
@@ -60,9 +60,36 @@ Shows a map with places in the local area suitable for Running and Outdoor Train
 ## Wireframes
 
 ---
+### Desktop
+![Home Page](/wireframes/desktop/Home_page.png)
 
-    [update wireframes]
-    [upload wireframes]
+![Amount of Calories](/wireframes/desktop/Amount_of_Calories.png)
+
+![Amount of Time(unchanged)](/wireframes/desktop/Amount_of_Time_[unchanged].png)
+
+![Amount of Time](/wireframes/desktop/Amount_of_Time.png)
+
+![Suggestions](/wireframes/desktop/Suggestions.png)
+
+![Suggestions (contintue)](/wireframes/desktop/Suggestions_[continue].png)
+
+![Outdoor_training](/wireframes/desktop/Outdoor_training.png)
+
+![Header & Footer](/wireframes/desktop/Header&Footer.png)
+<br><br>
+### Mobile
+![Home Page - Mobile](/wireframes/mobile/Home_page[mobile].png)
+
+![Amount of Calories - Mobile](/wireframes/mobile/Amount_of_Calories[mobile].png)
+
+![Amount of Time - Mobile](/wireframes/mobile/Amount_of_Time[mobile].png)
+
+![Suggestions - Mobile](/wireframes/mobile/Suggestions[mobile].png)
+
+![Suggestions - [continue] - Mobile](/wireframes/mobile/Suggestions_[continue][mobile].png)
+
+![Outdoor Training](/wireframes/mobile/Outdoor_Training[mobile].png)
+
 
 <br>
 
@@ -83,7 +110,7 @@ Shows a map with places in the local area suitable for Running and Outdoor Train
 ---
 
 <p>
-    [how I'm running my website]
+    I am running it through GitHub and sharing a link to the page.
 </p>
 <br><br>
 
@@ -94,7 +121,9 @@ Shows a map with places in the local area suitable for Running and Outdoor Train
 <ul>
 <li>Used typography is <b>Mulish</b> form Google Fonts. It has a clean design and I feel it works with the project.</li><br>
 <li>Used color is a similar orange as Club Active's. I made the orange a bit brighter as Club Active's orange became a little to dark
-when used as a background for the sections.</li>
+when used as a background for the sections.</li><br>
+<li>The other colors I keep dark towards darkgray as I find them on the website for Club Active. 
+</ul>
 </p>
 <br><br>
 
@@ -103,9 +132,8 @@ when used as a background for the sections.</li>
 ---
 
 <p>
-How I've tested my site
-Different screen sizes and devices
-What people said when testing
+I have tested the site on Google Chrome on my Macbook Pro 13inch. 
+I've looked through the different screen sizes to see how the site responds.
 </p>
 <br><br>
 
@@ -114,8 +142,7 @@ What people said when testing
 <p>
     1. The classes of <b>suggestions</b> doesn't replace eachother but stays on screen even after you alter value for inputs of time and calories
     so they become double. The change is then that suggestions that are not accurate to current values from time and calories and displaying.<br><br>
-    2. The values from "personal-details" inputs like "weight", "height" and "BMR" are at this point not taken into account. This is due to my own lack of time.<br><br>
-    3. On smaller screens the suggestions-text doesn't fit the boxes.
+    2. The values from "personal-details" inputs like "weight", "height" and "BMR" are at this point not taken into account. This is due to my own lack of time.
 </p>
 
 <br><br>
@@ -141,18 +168,25 @@ I have run my code through WC3 Markup Validation aswell as JSLint.
    There will be more suggestions and also I will try to make them more dynamic – in contrast to the concrete suggestions that
    are now pre-written.
 
+4. When a button is clicked and a new section is displayed I want the view-window to scroll down automatically so the new section so it gets in the middle of view.
+
 </p>
 <br><br>
 
 ## Test cases
 
 ---
+<p>
+I have not let anybody else look at the project.
+</p>
+<br><br>
 
 ### <b>Browsers</b>
 
 <p>
-I have tested my site on Google Chrome.<br><br>
+I have tested my site on Google Chrome.
 </p>
+<br><br>
 
 ### <b>Faced and fixed issues</b>
 
@@ -170,3 +204,9 @@ I have tested my site on Google Chrome.<br><br>
 
 Rohit - My mentor <br>
 Code Institute Support <br>
+StackOverflow <br>
+Slack - Code Institute students<br>
+
+### Media
+
+The photo in the background is taken by myself.
